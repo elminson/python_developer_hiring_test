@@ -1,4 +1,9 @@
 # Python Developer Hiring Test
+[![Build Status](https://travis-ci.org/hmtanbir/python_developer_hiring_test.svg?branch=master)](https://travis-ci.org/hmtanbir/python_developer_hiring_test)
+[![codecov](https://codecov.io/gh/hmtanbir/python_developer_hiring_test/branch/master/graph/badge.svg)](https://codecov.io/gh/hmtanbir/python_developer_hiring_test)
+
+
+
 
 ## How to run the solution
 
