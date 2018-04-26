@@ -17,10 +17,14 @@ def usernameDisparity(a):
         suffix = a[i:]
         answer += get_similarity(a, suffix)
         i += 1
-    print answer
+    return answer
+
+
+def main():
+    for _ in range(input()):
+        a = raw_input()
+        print usernameDisparity(a)
 
 
 if __name__ == '__main__':
-    for _ in range(input()):
-        a = raw_input()
-        usernameDisparity(a)
+    main()
