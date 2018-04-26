@@ -23,14 +23,18 @@ def maxDifference(input_array):
     min_index = input_array.index(min_num)
 
     if max_index > min_index:
-        print input_array[max_index] - input_array[min_index]
+        return input_array[max_index] - input_array[min_index]
     else:
         ans = findNewIndex(max_index, min_index, input_array)
-        print ans
+        return ans
 
 
-if __name__ == '__main__':
+def main():
     input_array = list()
     for _ in range(input()):
         input_array.append(input())
-    maxDifference(input_array)
+    print maxDifference(input_array)
+
+
+if __name__ == '__main__':
+    main()
