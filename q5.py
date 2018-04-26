@@ -3,18 +3,17 @@
 import re
 
 
-def checkIPs(ip_arrays):
+def checkIPs(ip_array):
     # Identifies the type of IP addresses (IPv4, IPv6, or "Neither").
     ipv4_pattern = get_ipv4_pattern()
     ipv6_pattern = get_ipv6_pattern()
 
-    for ip_array in ip_arrays:
-        if ipv4_pattern.match(ip_array):
-            print('IPv4')
-        elif ipv6_pattern.match(ip_array):
-            print('IPv6')
-        else:
-            print('Neither')
+    if ipv4_pattern.match(ip_array):
+        return 'IPv4'
+    elif ipv6_pattern.match(ip_array):
+        return 'IPv6'
+    else:
+        return 'Neither'
 
 
 def get_ipv4_pattern():
@@ -33,7 +32,13 @@ def get_ipv6_pattern():
     return pattern
 
 
+def main():
+    ip_arrays = list()
+    for _ in range(input()):
+        ip_arrays.append(raw_input())
+    for ip_array in ip_arrays:
+        print checkIPs(ip_array)
+
+
 if __name__ == '__main__':
-    ip_array_count = int(input())
-    ip_arrays = (raw_input() for _ in range(ip_array_count))
-    checkIPs(ip_arrays)
+    main()
