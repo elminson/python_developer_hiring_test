@@ -32,7 +32,11 @@ def countPowerNumbers(l,r):
     return count
 
 
-if __name__ == "__main__":
+def main():
     l = int(raw_input().strip())
     r = int(raw_input().strip())
-print countPowerNumbers(l, r)
+    print countPowerNumbers(l, r)
+
+
+if __name__ == "__main__":
+    main()
