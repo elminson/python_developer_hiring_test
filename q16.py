@@ -69,8 +69,6 @@ def connected_components(nodes):
     # Return the list of groups.
     return result
 
-    # The test code...
-
 
 def minimalCost(n, pairs):
     nodes_map = {x: Data(x) for x in xrange(1, n + 1)}
