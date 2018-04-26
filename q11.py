@@ -24,7 +24,7 @@ def superStack(stacks):
     return newStack
 
 
-if __name__ == '__main__':
+def main():
     # array input of metals length
     stacks_array = list()
     stacks_count = int(input())
@@ -34,3 +34,7 @@ if __name__ == '__main__':
         stacks_array.append(n)
         # print out the result
     print superStack(stacks_array)
+
+
+if __name__ == '__main__':
+    main()
