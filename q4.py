@@ -29,7 +29,7 @@ def zombieCluster(zombies):
     return count
 
 
-if __name__ == '__main__':
+def main():
     # array input of zombie
     zombie_array = list()
     zombie_count = int(input())
@@ -37,6 +37,10 @@ if __name__ == '__main__':
         n = raw_input()
         zombie_array.append(str(n))
 
-# zombie_array = ["1100" ,"1110", "0110", "0001"]
-# print out the result
-print(zombieCluster(zombie_array))
+    # zombie_array = ["1100" ,"1110", "0110", "0001"]
+    # print out the result
+    print(zombieCluster(zombie_array))
+
+
+if __name__ == '__main__':
+    main()
