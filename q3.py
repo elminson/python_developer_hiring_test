@@ -72,8 +72,12 @@ def calculateScore(text, prefix, suffix):
     return result
 
 
-if __name__ == '__main__':
+def main():
     text = str(raw_input().strip())
     prefix = str(raw_input().strip())
     suffix = str(raw_input().strip())
     print calculateScore(text, prefix, suffix)
+
+
+if __name__ == '__main__':
+    main()
