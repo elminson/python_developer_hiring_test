@@ -28,10 +28,10 @@ def calculateMaximumProfit(cost_per_cut, metal_price, lengths):
         maxProfit = max(maxProfit, curProfit)
         curLength += 1
     # prints maximum profit
-    print maxProfit
+    return maxProfit
 
 
-if __name__ == '__main__':
+def main():
     cost_per_cut = int(input())
     metal_price = int(input())
     # array input of metals length
@@ -42,4 +42,8 @@ if __name__ == '__main__':
         n = input()
         lengths_array.append(int(n))
         # print out the result
-    calculateMaximumProfit(cost_per_cut, metal_price, lengths_array)
+    print calculateMaximumProfit(cost_per_cut, metal_price, lengths_array)
+
+
+if __name__ == '__main__':
+    main()
