@@ -86,9 +86,13 @@ def minimalCost(n, pairs):
     return long(cost)
 
 
-if __name__ == '__main__':
+def main():
     n = int(input())
     pairs = list()
     for _ in range(input()):
         pairs.append(raw_input())
     print minimalCost(n, pairs)
+
+
+if __name__ == '__main__':
+    main()
