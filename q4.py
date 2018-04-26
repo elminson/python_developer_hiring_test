@@ -23,7 +23,7 @@ def zombieCluster(zombies):
                 visited[i][j] = True
                 visited[j][i] = True
                 DFS(j, visited, zombies, row)
-                if bol == False:
+                if bol == 0:
                     count += 1
                     bol = True
     return count
