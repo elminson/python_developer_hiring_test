@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+
 def maxMoney(n, k):
     sum = 0
     i = 0
@@ -8,11 +9,14 @@ def maxMoney(n, k):
         if (sum == k):
             sum = sum - 1
         i += 1
-    print sum
+    return sum
+
+
+def main():
+    n = int(input())
+    k = int(input())
+    print maxMoney(n, k)
 
 
 if __name__ == '__main__':
-    n = int(input())
-    k = int(input())
-    # print out the result    
-maxMoney(n, k)
+    main()
