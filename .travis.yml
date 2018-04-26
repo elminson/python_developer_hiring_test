@@ -1,0 +1,23 @@
+language: python
+python:
+    - "2.7"
+install:
+  - pip install codecov
+
+script:
+  - coverage run tests/test_q3.py
+  - coverage run tests/test_q4.py
+  - coverage run tests/test_q5.py
+  - coverage run tests/test_q6.py
+  - coverage run tests/test_q10.py
+  - coverage run tests/test_q11.py
+  - coverage run tests/test_q13.py
+  - coverage run tests/test_q15.py
+  - coverage run tests/test_q16.py
+  - coverage run tests/test_q17.py
+  - coverage run tests/test_q18.py
+  - coverage run tests/test_q19.py
+  - coverage run tests/test_q20.py
+
+after_success:
+  - codecov
